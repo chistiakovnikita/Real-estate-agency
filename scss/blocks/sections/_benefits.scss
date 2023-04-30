@@ -1,0 +1,59 @@
+.benefits {
+    text-align: center;
+
+    &__title {
+        margin-bottom: 58px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 170px;
+    }
+
+    .benefits-block {
+        cursor: pointer;
+
+        &__img {
+            margin-bottom: 15px;
+
+            path {
+                fill: $bg-color;
+                transition: fill 0.3s linear;
+            }
+
+            circle {
+                fill: rgba(88, 190, 191, 0.2);
+                transition: fill 0.3s linear;
+            }
+
+            ellipse {
+                fill: rgba(88, 190, 191, 0.2);
+                transition: fill 0.3s linear;   
+            }
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 28px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        &__text {
+            line-height: 27px;
+            letter-spacing: 1.15px;
+        }
+
+        &:hover {
+            path {
+                fill: $white-color;
+            }
+
+            circle {
+                fill: $orange-color;
+            }
+        }
+    }
+}

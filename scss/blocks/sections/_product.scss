@@ -1,0 +1,44 @@
+.product {
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 96px;
+        background: $bg-color;
+        padding-top: 59px;
+        border-radius: 20px;
+        margin-bottom: 129px;
+    }
+
+    &__img img {
+        border-radius: 0 20px 0 0;
+        display: block;
+        border: 25px solid $white-color;
+        border-left: none;
+        border-bottom: none;
+    }
+
+    &__text {
+        max-width: 364px;
+
+        p {
+            line-height: 27px;
+            letter-spacing: 1.15px;
+            color: $white-color;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 62px;
+        letter-spacing: 0.8px;
+        color: $white-color;
+        margin-bottom: 15px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,46 @@
+.button {
+    border: none;
+    outline: none;
+    background: $orange-color;
+    font-weight: 700;
+    color: $white-color;
+    width: 157px;
+    height: 58px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s linear;
+
+    &:hover {
+        background: #e17a31;
+    }
+
+    &--white {
+        background: $white-color;
+        color: $main-color;
+
+        &:hover {
+            background: rgb(211, 205, 205);
+        }
+    }
+
+    &--play {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        line-height: 24px;
+        &::before {
+            content: url(./../../img/icons/play.svg);
+            margin-right: 7px;
+        }
+    }
+
+    &--serve {
+        background: $white-color;
+        color:$orange-color;
+            
+        &:hover {
+            background: rgb(211, 205, 205)
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.spaces {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 145px;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__img {
+        position: relative;
+        margin-right: 32px;
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__text {
+        width: 374px;
+        margin-right: 205px;
+        flex-shrink: 0;
+
+        p {
+            margin-bottom: 20px;
+            line-height: 27px;
+            letter-spacing: 1.15px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        margin-top: 40px;
+    }
+
+    .image-info {
+        position: absolute;
+        bottom: 87px;
+        right: 0;
+        width: 300px;
+        height: 141px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $white-color;
+        border-radius: 15px;
+
+        img {
+            margin-left: 20px;
+        }
+
+        &__title {
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+        }
+
+        &__text {
+            line-height: 27px;
+            letter-spacing: 1.15px;
+        }
+    }
+}

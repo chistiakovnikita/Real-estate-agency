@@ -1,0 +1,105 @@
+.header {
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 35px 0 33px 0;
+
+        .navigation-list {
+            ul {
+                display: flex;
+            }
+
+            li:not(:last-child) {
+                margin-right: 42px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $main-color;
+                transition: color 0.3s linear;
+
+                &.active {
+                    color: $orange-color;
+                    font-weight: 700;
+                }
+
+                &:hover {
+                    color: $orange-color;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 24px;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    &__text {
+        width: 467px;
+
+        p {
+            font-size: 16px;
+            letter-spacing: 1.15px;
+            line-height: 27px;
+            margin-bottom: 42px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 54px;
+        letter-spacing: 0.8px;
+        line-height: 79px;
+        margin-bottom: 25px;
+        margin-right: -155px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .form {
+        box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+        height: 58px;
+        border-radius: 30px;
+
+        &__label {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &::before {
+                content: url(./../img/icons/email.svg);
+                position: absolute;
+                top: 21px;
+                left: 28px;
+            }
+        }
+
+        &__input {
+            border: none;
+            outline: none;
+            width: 225px;
+            margin-left: 72px;
+            cursor: pointer;
+        }
+    }
+
+    &__img img {
+        border-radius: 40px 40px 40px 0;
+    }
+}
