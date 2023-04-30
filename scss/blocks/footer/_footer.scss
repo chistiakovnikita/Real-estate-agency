@@ -1,0 +1,62 @@
+.footer {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 86px 0 82px 0;
+    }
+
+    &__info {
+        max-width: 300px;
+        p {
+            margin-bottom: 40px;
+            line-height: 27px;
+            letter-spacing: 1.15px;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 15px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 30px;
+
+        img {
+            transition: transform 0.3s linear;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        gap: 85px;
+        
+    }
+
+    .navigation-block {
+        &__title {
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 32px;
+            letter-spacing: 0.5px;
+            margin-bottom: 18px;
+        }
+
+        &__item {
+            font-size: 14px;
+            line-height: 27px;
+            letter-spacing: 0.5px;
+            margin-bottom: 13px;
+            cursor: pointer;
+            transition: color 0.3s linear;
+
+            &:hover {
+                color: $orange-color;
+            }
+        }
+    }
+}

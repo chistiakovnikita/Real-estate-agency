@@ -1,0 +1,38 @@
+.contact-us {
+    position: relative;
+    background: url(../../../img/contact-us/Bg.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0 55px 0;
+
+    &::before {
+        content: url(./../../../img/contact-us/girl.png);
+        position: absolute;
+        bottom: -2.2px;
+        right: 264px;
+        
+        
+    }
+
+    &__content {
+        width: 359px;
+    }
+   
+   
+
+    &__title {
+        color: $white-color;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        color: $white-color;
+        line-height: 27px;
+        letter-spacing: 1.15px;
+        margin-bottom: 30px;
+    }
+
+    
+
+    
+}

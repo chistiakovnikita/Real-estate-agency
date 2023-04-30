@@ -31,18 +31,6 @@
         }
     }
 
-    &__logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 700;
-        font-size: 24px;
-
-        img {
-            margin-right: 10px;
-        }
-    }
-
     &__content {
         display: flex;
         align-items: center;

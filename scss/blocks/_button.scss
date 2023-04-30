@@ -17,7 +17,6 @@
     &--white {
         background: $white-color;
         color: $main-color;
-
         &:hover {
             background: rgb(211, 205, 205);
         }
@@ -27,7 +26,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-weight: 700;
+
         line-height: 24px;
         &::before {
             content: url(./../../img/icons/play.svg);
@@ -37,10 +36,10 @@
 
     &--serve {
         background: $white-color;
-        color:$orange-color;
-            
+        color: $orange-color;
+
         &:hover {
-            background: rgb(211, 205, 205)
+            background: rgb(211, 205, 205);
         }
     }
 }
