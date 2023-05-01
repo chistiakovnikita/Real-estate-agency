@@ -4,16 +4,25 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 58px;
+        @media screen and (max-width: 820px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__title {
         max-width: 454px;
+        @media screen and (max-width: 820px) {
+            min-width: 100%;
+        }
     }
 
     &__subtitle {
         max-width: 398px;
         line-height: 27px;
         letter-spacing: 1.15px;
+        @media screen and (max-width: 820px) {
+            min-width: 100%;
+        }
     }
 
     &__content {
@@ -21,6 +30,13 @@
         justify-content: space-between;
         gap: 5px;
         margin-bottom: 58px;
+        @media screen and (max-width: 650px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 0;
+        }
     }
 
     .testimonials-card {
@@ -65,7 +81,7 @@
             line-height: 27px;
             letter-spacing: 1.15px;
             color: $bg-color;
-            transition: color 0.3s linear ;
+            transition: color 0.3s linear;
         }
     }
 }

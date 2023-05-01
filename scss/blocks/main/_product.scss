@@ -7,6 +7,14 @@
         padding-top: 59px;
         border-radius: 20px;
         margin-bottom: 129px;
+        @media screen and (max-width: 850px) {
+            display: block;
+            text-align: center;
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 30px;
+        }
+        
     }
 
     &__img img {
@@ -15,10 +23,17 @@
         border: 25px solid $white-color;
         border-left: none;
         border-bottom: none;
+        width: 100%;
+        @media screen and (max-width: 850px) {
+            display: none;
+        }
     }
 
     &__text {
         max-width: 364px;
+        @media screen and (max-width: 850px) {
+            max-width: 100%;
+        }
 
         p {
             line-height: 27px;
@@ -35,10 +50,27 @@
         letter-spacing: 0.8px;
         color: $white-color;
         margin-bottom: 15px;
+        @media screen and (max-width: 1100px) {
+            font-size: 44px;
+            margin-right: 0;
+            line-height: 50px;
+        }
+       
+        @media screen and (max-width: 540px) {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        @media screen and (max-width: 460px) {
+            font-size: 25px;
+            line-height: 30px;
+        }
     }
 
     &__buttons {
         display: flex;
         gap: 20px;
+        @media screen and (max-width: 850px) {
+           justify-content: center;
+        }
     }
 }

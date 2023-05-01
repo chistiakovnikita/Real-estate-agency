@@ -10,15 +10,20 @@
         position: absolute;
         bottom: -2.2px;
         right: 264px;
-        
-        
+        @media screen and (max-width: 1110px) {
+            right: 10px;
+        }
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__content {
         width: 359px;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
-   
-   
 
     &__title {
         color: $white-color;
@@ -31,8 +36,4 @@
         letter-spacing: 1.15px;
         margin-bottom: 30px;
     }
-
-    
-
-    
 }

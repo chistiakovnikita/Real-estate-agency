@@ -13,12 +13,21 @@
         height: 100%;
         background: $grey-color;
         z-index: -1;
+        @media screen and (max-width: 768px) {
+            display: none;
+         }
     }
 
     &__inner {
         display: flex;
         gap: 30px;
         padding-bottom: 128px;
+        @media screen and (max-width: 768px) {
+           flex-wrap: wrap;
+        }
+        @media screen and (max-width: 768px) {
+            padding-bottom: 30px;
+        }
     }
 
     &__title {
@@ -39,6 +48,13 @@
         border-radius: 10px;
         transition: all 0.3s linear;
         background: $white-color;
+        @media screen and (max-width: 768px) {
+            background-color: $grey-color;
+         }
+        @media screen and (max-width: 400px) {
+            background-color: $grey-color;
+            padding: 7px 50px;
+         }
 
         &:hover {
             background: $orange-color;
